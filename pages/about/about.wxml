@@ -1,0 +1,68 @@
+<view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="{{indicator}}"  style='height:470rpx;'>
+  <block wx:for="{{imgUrls}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" bindtap='previewImg'data-index='{{index}}'/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view style='margin-top:30rpx;' class='h0'>
+  <image src='https://m.qpic.cn/psb?/V14JKMah3m0Bed/xt709L9fS1t39QPK1fCY*1M1mJ60ug5DuWKKq9DjwY8!/b/dLYAAAAAAAAA&bo=bQFtAQAAAAADByI!&rf=viewer_4' style='width:120rpx;height:120rpx;margin-top:270rpx;margin-left:80rpx;'></image>
+</view>
+
+<view>
+ <view class='h3'>
+<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text><text style='color:red;'>IF皮肤管理中心</text><text>{{jianjie}}</text>
+  </view>
+</view>
+
+<view style='padding:20rpx;color:red;font-weight:600;'>
+  <image src='http://m.qpic.cn/psb?/V14JKMah3m0Bed/VX2fcVpVPOzRZwXbngfqUruvCku9ZpcNt.FctIJzPXs!/b/dDYBAAAAAAAA&bo=gACBAAAAAAARFyE!&rf=viewer_4' style='width:80rpx;height:80rpx;'></image>
+  <text style='margin:20rpx;'>IF大家庭</text>
+</view>
+
+<view>
+ <scroll-view scroll-x="true"> 
+ <view class="uploadWrap" scroll-x="true" > 
+  <view class="upload_Item" wx:for="{{renyuan}}" wx:key="item" bindtap='tomeirongshi' data-meirongshi='{{item}}' data-index='{{index}}'> 
+   <image class="upload_Item_img" src="{{item.url}}"  ></image> 
+  </view> 
+ </view> 
+</scroll-view>
+
+</view>
+
+<view style='border-bottom: 1rpx solid #d3d7d4;'>
+  <view class='h1'>
+    IF皮肤管理中心<text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>|
+    <image src='../../icon/lianxiwomen.png' style='width:50rpx;height:50rpx;' bindtap='tophone'></image>
+  </view>
+</view>
+
+<view style='border-bottom: 1rpx solid #d3d7d4;'>
+  <view class='h2'>
+    <image src='../../icon/miaosha.png' style='width:50rpx;height:50rpx;' ></image>
+    <text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>周一到周日10：00-19：30
+  </view>
+</view>
+
+<view style='border-bottom: 1rpx solid #d3d7d4;' bindtap='click'>
+  <view class='h2'>
+    <image src='../../icon/shouhuodizhi.png' style='width:50rpx;height:50rpx;' ></image>
+    <text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>柳叶大道恒大华府南门2栋105
+  </view>
+</view>
+
+<view>
+  <image src='{{erwei}}' style='width:100%;height:800rpx;' bindtap='previewImg1'data-index='{{index}}'></image>
+</view>
+
+
+<view style='font-size:25rpx;text-align:center;background:white;padding:20rpx;opacity: 0.5;'bindtap="totianxiphone">
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>-由深圳信诚天下电子商务有限公司提供技术支持-</text>
+</view>
+

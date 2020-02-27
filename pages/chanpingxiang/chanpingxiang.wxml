@@ -1,0 +1,40 @@
+<view style='background:white;'>
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="{{indicator}}"  style='height:900rpx;'>
+  <block wx:for="{{xiang.url}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" bindtap='previewImg'data-index='{{index}}'/>
+    </swiper-item>
+  </block>
+</swiper>
+  <view style='padding:40rpx;font-weight: 700;'>{{xiang.guanggao}}</view>
+  <view style='margin-left:20rpx;padding-bottom:50rpx;'>￥<text style='font-size:50rpx;color:red;'>{{xiang.dollar}}</text>
+  </view>
+  <view style='padding:20rpx;background:whitesmoke;font-size:30rpx;opacity: 0.7;'>
+    <image src='../../icon/gou.png' style='width:30rpx;height:30rpx;'></image><text style='margin-right:30rpx;margin-left:30rpx;'>到店付</text>
+    <image src='../../icon/gou.png' style='width:30rpx;height:30rpx;'></image><text style='margin-right:30rpx;margin-left:30rpx;'>商家认证</text>
+  </view>
+</view>
+
+<view style='margin-top:20rpx;margin-bottom:20rpx;font-size:30rpx;margin-bottom:180rpx;' >
+  <view style='padding-left:20rpx;padding-right:20rpx;background:white;display: flex;align-items: center;'>
+  <image src='https://m.qpic.cn/psb?/V14JKMah3m0Bed/xt709L9fS1t39QPK1fCY*1M1mJ60ug5DuWKKq9DjwY8!/b/dLYAAAAAAAAA&bo=bQFtAQAAAAADByI!&rf=viewer_4' style='width:80rpx;height:80rpx;'></image> <text style='margin:30rpx;'>IF美学管理中心</text><text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+  <image src='../../icon/lianxiwomen.png' style='width:50rpx;height:50rpx;' bindtap='tophone'></image>
+  </view>
+  <view style='padding-left:20rpx;padding-right:20rpx;background:white;display: flex;align-items: center;'>
+  <text style='margin:30rpx;'>IF美学管理中心</text><text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+  <image src='../../icon/shouhuodizhi.png' style='width:50rpx;height:50rpx;' bindtap='click'></image>
+  </view>
+</view>
+
+<view class='h0'>
+  <view style='background:white; font-size:30rpx;width:20%;padding:10rpx;text-align:center;border:1rpx solid whitesmoke;float:left;'bindtap='tohome'>
+  <view >
+    <image src="../../icon/dianpu.png" style='width:60rpx;height:60rpx;'></image>
+  </view>
+  <view >店铺</view>
+  </view>
+  <view style='height:100%; display: flex;justify-content: center;align-items:center; color:white;background:#d4237a;' bindtap='tophone'>
+    立即预约
+  </view>
+</view>

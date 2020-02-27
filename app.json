@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/product/product",
+    "pages/yuyue/yuyue",
+    "pages/about/about",
+    "pages/xiang/xiang",
+    "pages/meirongshi/meirongshi",
+    "pages/chanpingxiang/chanpingxiang",
+    "pages/zuopin/zuopin",
+    "pages/anli/anli",
+    "pages/xiangnd/xiangnd"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icon/home.png",
+      "selectedIconPath": "icon/home-select.png"
+    },
+    {
+      "pagePath": "pages/yuyue/yuyue",
+      "text": "案例展示",
+      "iconPath": "icon/anli.png",
+      "selectedIconPath": "icon/anli-select.png"
+    },
+    {
+      "pagePath": "pages/product/product",
+      "text": "预约",
+      "iconPath": "icon/yuyue.png",
+      "selectedIconPath": "icon/yuyue-select.png"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "关于我们",
+      "iconPath": "icon/about.png",
+      "selectedIconPath": "icon/about-select.png"
+    }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

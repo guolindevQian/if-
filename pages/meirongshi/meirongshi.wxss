@@ -1,0 +1,7 @@
+page{
+  background: whitesmoke;
+}
+.h0{
+  padding: 20rpx;
+  background:black; 
+}

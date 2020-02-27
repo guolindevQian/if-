@@ -1,0 +1,10 @@
+<view>
+  <image src='{{xiang.url}}' style='width:100%;height:700rpx;'bindtap='previewImg'data-index='{{index}}'></image>
+</view>
+
+<view style='text-align:center;margin-top:20rpx;background:white;padding-top:30rpx;'>
+  <text >详情</text>
+</view>
+<view style='background:white;padding:30rpx;'>
+  <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{xiang.xiangqing}}
+</view>

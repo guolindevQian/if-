@@ -1,0 +1,59 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="{{indicator}}"  style='height:500rpx;'>
+  <block wx:for="{{imgUrls}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" bindtap='previewImg'data-index='{{index}}'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view style='text-align:center;font-size:25rpx;width:100%;height:400rpx;background:white;margin-top:20rpx;margin-bottom:20rpx;'>
+  <view wx:for="{{fuwu}}" wx:key="item" style='float:left;width:17%;padding:30rpx;'>
+    <view  data-xiang='{{item}}' data-index='{{index}}' bindtap='toxiang'>
+        <view>
+          <image src='{{item.url}}' style='width:60%;height:80rpx;'></image>
+        </view>
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+
+</view> 
+
+<view style='padding-bottom:20rpx;'>
+  <view >
+    <image src='http://m.qpic.cn/psb?/V14JKMah3m0Bed/Bt*Ip7TU*IO8NcfJN88BfbNge4gzyrZsbpqJ5dN4NDg!/b/dL8AAAAAAAAA&bo=sAQsAQAAAAACZ9o!&rf=viewer_4' style='width:100%;height:150rpx;'></image>
+  </view>
+  <view class='h0'>
+    体验价活动区
+  </view>
+  <view wx:for="{{fuli}}" wx:key="item">
+    <image src='{{item}}' style='width:100%;height:200rpx;border-radius: 10px'></image>
+  </view>
+</view>
+
+<view>
+  <view class='h0'>
+    爆款项目(会员价)
+  </view>
+  <view wx:for="{{baokuan}}" wx:key="item">
+    <image src='{{item}}' style='width:100%;height:200rpx;border-radius: 10px'></image>
+  </view>
+</view>
+
+<view>
+  <view class='h0'>
+    特色项目
+  </view>
+  <view wx:for="{{tesexiang}}" wx:key="item">
+    <image src='{{item}}' style='width:100%;height:200rpx;border-radius: 10px'></image>
+  </view>
+</view>
+
+<view style='font-size:25rpx;text-align:center;background:white;padding:20rpx;opacity: 0.5;'bindtap="totianxiphone">
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>-由深圳信诚天下电子商务有限公司提供技术支持-</text>
+</view>
+
+<view> 
+<image src="../../icon/dianhua.png" class="img-plus-style1" bindtap="tophone"></image>
+</view>
